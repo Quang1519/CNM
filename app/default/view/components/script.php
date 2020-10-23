@@ -1,0 +1,14 @@
+<script src="<?php echo DIR_APP ?>default\view\assets\js\jquery-min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\popper.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\bootstrap.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\jquery.countdown.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\waypoints.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\jquery.counterup.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\jquery.nav.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\jquery.easing.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\wow.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\nivo-lightbox.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\video.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\main.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\form-validator.min.js"></script>
+<script src="<?php echo DIR_APP ?>default\view\assets\js\contact-form-script.min.js"></script>
