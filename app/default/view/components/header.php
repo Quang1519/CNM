@@ -15,12 +15,12 @@ Trang chủ
 </a>
 </li>
 <li class="nav-item <?php echo $this->active=='schedules' ? 'active':'' ?>">
-<a class="nav-link" href="schedules.html">
+<a class="nav-link" href="<?php echo URL::createLink('default','schedules','index') ?>">
 Lịch sự kiện
 </a>
 </li>
 <li class="nav-item <?php echo $this->active=='speakers' ? 'active':'' ?>">
-<a class="nav-link" href="speakers.html">
+<a class="nav-link" href="<?php echo URL::createLink('default','speakers','index') ?>">
 Khách mời
 </a>
 </li>
