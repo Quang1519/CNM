@@ -23,7 +23,7 @@
 </section>
 
 
-<section id="about" class="section-padding">
+<!-- <section id="about" class="section-padding">
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-12 col-xs-12">
@@ -51,64 +51,7 @@
 </div>
 </div>
 </div>
-</section>
-
-
-
-
-<div class="ready-to-play">
-<video id="bgvid" class="stop" loop="">
-<source src="assets\video\event.webm" type="video/mp4">
-</video>
-<div id="polina" class="video-text">
-<div class="tb-t">
-<div class="tb-c">
-<div class="polina"><button><i class='lni-play'></i></button></div>
-</div>
-</div>
-</div>
-</div>
-
-
-<section id="information-bar">
-<div class="container">
-<div class="row inforation-wrapper">
-<div class="col-lg-3 col-md-6 col-xs-12">
-<ul>
-<li>
-<i class="lni-map-marker"></i>
-</li>
-<li><span><b>Địa điểm</b> 371 Nguyễn Kiệm, GV, HCM</span></li>
-</ul>
-</div>
-<div class="col-lg-3 col-md-6 col-xs-12">
-<ul>
-<li>
-<i class="lni-calendar"></i>
-</li>
-<li><span><b>Thời gian</b> 5pm - 21pm, 23 10</span></li>
-</ul>
-</div>
-<div class="col-lg-3 col-md-6 col-xs-12">
-<ul>
-<li>
-<i class="lni-mic"></i>
-</li>
-<li><span><b>Khách mời</b> 10 Khách mời</span></li>
-</ul>
-</div>
-<div class="col-lg-3 col-md-6 col-xs-12">
-<ul>
-<li>
-<i class="lni-user"></i>
-</li>
-<li><span><b>Chỗ ngồi</b> 4000 người</span></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-
+</section> -->
 
 <section id="intro" class="intro section-padding">
 <div class="container">
@@ -185,6 +128,64 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 </div>
 </div>
 </section>
+
+<!-- <section id="information-bar">
+<div class="container">
+<div class="row inforation-wrapper">
+<div class="col-lg-3 col-md-6 col-xs-12">
+<ul>
+<li>
+<i class="lni-map-marker"></i>
+</li>
+<li><span><b>Địa điểm</b> 371 Nguyễn Kiệm, GV, HCM</span></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 col-xs-12">
+<ul>
+<li>
+<i class="lni-calendar"></i>
+</li>
+<li><span><b>Thời gian</b> 5pm - 21pm, 23 10</span></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 col-xs-12">
+<ul>
+<li>
+<i class="lni-mic"></i>
+</li>
+<li><span><b>Khách mời</b> 10 Khách mời</span></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-6 col-xs-12">
+<ul>
+<li>
+<i class="lni-user"></i>
+</li>
+<li><span><b>Chỗ ngồi</b> 4000 người</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section> -->
+
+<div class="ready-to-play">
+<video id="bgvid" class="stop" loop="">
+<source src="<?php echo DIR_APP ?>default\view\assets\video\event.webm" type="video/mp4">
+</video>
+<div id="polina" class="video-text">
+<div class="tb-t">
+<div class="tb-c">
+<div class="polina"><button><i class='lni-play'></i></button></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
 
 <?php include 'components/footer.php' ?>
 

@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteBase /CNM
+RewriteRule home.html$ index.php?app=default&controller=index&action=index [L]
+RewriteRule ^([-a-zA-Z0-9]+).html$ index.php?app=default&controller=$1&action=index [L]
+
+RewriteRule admin/index.html$ index.php?app=admin&controller=index&action=index [L]
+RewriteRule admin/([-a-zA-Z0-9]+).html$ index.php?app=admin&controller=$1&action=index [L]
+RewriteRule admin/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+).html$ index.php?app=admin&controller=$1&action=$2 [L]

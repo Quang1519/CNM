@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php include 'components/head.php'; ?>
+  <?php include 'components/head.php' ?>
 </head>
 <body>
 
-  <?php include 'components/header.php'; ?>
-
-
-
-
+<?php include 'components/header.php' ?>
 
 <section id="team" class="section-padding text-center">
 <div class="container">
@@ -26,7 +22,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-01.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-01.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -49,7 +45,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-02.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-02.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -72,7 +68,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-03.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-03.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -95,7 +91,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-04.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-04.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -118,7 +114,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-05.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-05.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -141,7 +137,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-06.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-06.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -164,7 +160,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.4s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-07.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-07.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -187,7 +183,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.6s">
 <div class="team-img">
-<img class="img-fluid" src="assets\img\team\team-08.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-08.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -226,10 +222,10 @@
 <div class="col-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-1.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-1.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-1.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-1.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -238,10 +234,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-2.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-2.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-2.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-2.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -250,10 +246,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-3.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-3.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-3.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-3.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -262,10 +258,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-4.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-4.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-4.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-4.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -274,10 +270,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-5.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-5.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-5.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-5.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -286,10 +282,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-6.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-6.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-6.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-6.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -298,10 +294,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-7.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-7.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-7.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-7.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -310,10 +306,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="assets\img\gallery\img-8.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-8.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="assets\img\gallery\img-8.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-8.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -329,7 +325,7 @@
 </section>
 
 
-<section id="event-up" class="section-padding">
+<!-- <section id="event-up" class="section-padding">
 <div class="container">
 <div class="row">
 <div class="col-12">
@@ -391,12 +387,10 @@
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
+<?php include 'components/footer.php' ?>
 
-
-<?php include 'components/footer.php'; ?>
-
-<?php include 'components/script.php'; ?>
+<?php include 'components/script.php' ?>
 </body>
 </html>

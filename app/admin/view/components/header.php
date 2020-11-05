@@ -73,7 +73,7 @@
               </li> -->
               <li class="">
                   <!-- <i class="ti-settings"></i> -->
-                  <a class="dropdown-item" href="<?php echo URL::createLink('admin','index','logout') ?>">Đăng xuất</a>
+                  <a class="dropdown-item" href="logout.html">Đăng xuất</a>
               </li>
           </ul>
       </div>

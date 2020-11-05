@@ -10,30 +10,31 @@
 <div class="collapse navbar-collapse" id="navbarCollapse">
 <ul class="navbar-nav mr-auto w-100 justify-content-end">
 <li class="nav-item <?php echo $this->active=='index' ? 'active':'' ?>">
-<a class="nav-link" href="<?php echo URL::createLink('default','index','index') ?>">
+<a class="nav-link" href="home.html">
 Trang chủ
 </a>
 </li>
-<li class="nav-item <?php echo $this->active=='schedules' ? 'active':'' ?>">
-<a class="nav-link" href="<?php echo URL::createLink('default','schedules','index') ?>">
+<li class="nav-item <?php echo $this->active=='schedules' ? 'active':'' ?>" >
+<a class="nav-link" href="schedules.html">
 Lịch sự kiện
 </a>
 </li>
 <li class="nav-item <?php echo $this->active=='speakers' ? 'active':'' ?>">
-<a class="nav-link" href="<?php echo URL::createLink('default','speakers','index') ?>">
+<a class="nav-link" href="speakers.html">
 Khách mời
 </a>
 </li>
 <li class="nav-item <?php echo $this->active=='register' ? 'active':'' ?>">
-<a class="nav-link" href="<?php echo URL::createLink('default','register','index') ?>">
+<a class="nav-link" href="register.html">
 Nhận vé
 </a>
 </li>
-<li class="nav-item <?php echo $this->active=='login' ? 'active':'' ?>">
-<a class="nav-link" href="<?php echo URL::createLink('default','login','index') ?>">
-Đăng nhập
-</a>
-</li>
+<li class='nav-item <?php echo $this->active=='login' ? 'active':'' ?>'>
+  <a class='nav-link' href='login.html'>
+  Đăng nhập
+  </a>
+  </li>
+
 </ul>
 </div>
 </div>

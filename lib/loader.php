@@ -5,18 +5,23 @@
         public function __construct(){
             $this->setRequest();
             $this->app = $this->request['app'];
-            $this->controller = $this->request['controller'];
-            $this->action = $this->request['action'];
+            if($this->request['controller'] == 'logout') {
+                session_destroy();
+                $this->controller = 'index';
+                echo '<script type="text/javascript">window.location="home.html"</script>';
 
+            }
+            else {
+                $this->controller = $this->request['controller'];
+            }
+            $this->action = $this->request['action'];
             $controller = $this->loadController();
             $controller->{$this->action}();
-
-
-
 
         }
 
         public function loadController(){
+
             $controllerName = $this->controller.'Controller';
 
             $pathController = 'app/'.$this->app.'/controller/'.$controllerName.'.php';

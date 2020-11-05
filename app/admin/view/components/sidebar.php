@@ -9,7 +9,7 @@
           <nav>
               <ul class="metismenu" id="menu">
                   <li class="active">
-                      <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Dashboard</span></a>
+                      <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Trang chủ</span></a>
                       <ul class="collapse">
                           <li class="active"><a href="#">Active Menu Item</a></li>
                           <li><a href="#">Menuitem 2</a></li>

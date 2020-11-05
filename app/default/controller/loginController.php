@@ -25,8 +25,7 @@
 					$_SESSION['phanquyen']=$phanquyen;
           $_SESSION['ten']=$ten;
 
-          echo '<script type="text/javascript">window.location="'.URL::createLink('admin','index','index').'"</script>';
-
+          echo '<script type="text/javascript">window.location="admin/index.html"</script>';
 				}
 
         else
