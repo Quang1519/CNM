@@ -10,10 +10,10 @@
       $this->view->render('index');
     }
 
-    public function logout(){
-      session_destroy();
-      echo '<script type="text/javascript">window.location="'.URL::createLink('default','index','index').'"</script>';
-    }
+    // public function logout(){
+    //   session_destroy();
+    //   echo '<script type="text/javascript">window.location="'.URL::createLink('default','index','index').'"</script>';
+    // }
 
   }
 

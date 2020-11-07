@@ -10,7 +10,7 @@
 <div class="collapse navbar-collapse" id="navbarCollapse">
 <ul class="navbar-nav mr-auto w-100 justify-content-end">
 <li class="nav-item <?php echo $this->active=='index' ? 'active':'' ?>">
-<a class="nav-link" href="home.html">
+<a class="nav-link" href="index.html">
 Trang chủ
 </a>
 </li>
