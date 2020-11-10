@@ -8,7 +8,7 @@
             if($this->request['controller'] == 'logout') {
                 session_destroy();
                 $this->controller = 'index';
-                echo '<script type="text/javascript">window.location="home.html"</script>';
+                echo '<script type="text/javascript">window.location="index.html"</script>';
 
             }
             else {

@@ -8,39 +8,41 @@
         $password = md5($_REQUEST['password']);
 
         $user = $this->model->login($username,$password);
-        // print_r($user);
-
-        if($user) {
-          $result = $user[0];
-					$mssv=$result['mssv'];
-					// $password=$result['password'];
-          // $hotendem=$result['hotendem'];
-          $ten = $result['ten'];
-					$phanquyen=$result['phanquyen'];
-
-					//session//
-
-					$_SESSION['mssv']=$mssv;
-					// $_SESSION['password']=$password;
-					$_SESSION['phanquyen']=$phanquyen;
-          $_SESSION['ten']=$ten;
-
-          echo '<script type="text/javascript">window.location="admin/index.html"</script>';
-				}
-
-        else
-        {
-          $this->view->message =
+        if ($user!=false) {
+          # code...
+          foreach($user as $key => $val){
+            $user=$val['username'];
+            $pass=$val['password'];
+            if ($user==$username && $pass==$password) {
+              //Code
+              $mssv = $val['mssv'];
+              $ten = $val['ten'];
+              $phanquyen = $val['phanquyen'];
+              $_SESSION['mssv']=$mssv;
+              $_SESSION['phanquyen']=$phanquyen;
+              $_SESSION['ten']=$ten;
+            }else{
+              $this->view->message =
           '<div class="alert alert-danger mt-3" role="alert">
             Bạn đã nhập sai mật khẩu hoặc tài khoản
           </div>';
+            }
+          }
+        }else{
+          $this->view->message =
+          '<div class="alert alert-danger mt-3" role="alert">
+            Tài khoản của bạn không hợp lệ
+          </div>';
         }
-
-
+				}
+        if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])){
+          echo '<script type="text/javascript">window.location="index.html"</script>';
+        }
+        $this->view->render('login');
       }
-      $this->view->render('login');
+      
 
     }
-  }
+  
 
 ?>

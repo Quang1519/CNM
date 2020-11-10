@@ -30,9 +30,20 @@ Nhận vé
 </a>
 </li>
 <li class='nav-item <?php echo $this->active=='login' ? 'active':'' ?>'>
-  <a class='nav-link' href='login.html'>
+	<?php
+	if (isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])) {
+		# code...
+		echo "<a class='nav-link' href='logout.html'>
+  Đăng xuất
+  </a>";
+	}else{
+		echo "<a class='nav-link' href='login.html'>
   Đăng nhập
-  </a>
+  </a>";
+	}
+	?>
+  
+
   </li>
 
 </ul>

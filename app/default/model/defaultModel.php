@@ -3,9 +3,22 @@
 class defaultModel extends Model {
 
   public function login($username,$password){
-    $sql = "SELECT * from `user` where `mssv` = $username and `password` = '$password' limit 1";
-    $result = $this->loaddulieu($sql);
-    return $result;
+    $url = "https://ptta-cnm.herokuapp.com/taikhoan/".$username;
+    $result = $this->loaddulieu($url);
+    $numrow=-1;
+    foreach($result as $key => $val){
+      $numrow=$key;
+    }
+    if ($numrow>0) {
+      return false;
+    }elseif ($numrow == -1) {
+      # code...
+      return false;
+    }
+    else{
+      return $result;
+    }
+    
   }
 
   public function register($ten,$hovatendem,$mssv,$lop,$email){
