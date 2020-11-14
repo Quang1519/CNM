@@ -21,9 +21,9 @@ class defaultModel extends Model {
     
   }
 
-  public function register($ten,$hovatendem,$mssv,$lop,$email){
-    $sql = "INSERT INTO `user`(`ten`,`hovatendem`,`mssv`,`lop`,`email`,`phanquyen`) VALUES('$ten','$hovatendem','$mssv','$lop','$email',0)";
-    $result = $this->themxoasuakhonglastid($sql);
+  public function register($ten,$hoten,$mssv){
+    $url = "https://ptta-cnm.herokuapp.com/dangkyve/create/".rawurlencode($hoten."/".$mssv."/".$ten."/0");
+    $result = $this->loaddulieu($url);
     return $result;
   }
 

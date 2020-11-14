@@ -3,7 +3,6 @@
 <title>EventUp - Event and Conference Template</title>
 <!-- <base href="http://localhost:8080/CNM"> -->
 <link rel="stylesheet" type="text/css" href="<?php echo DIR_APP ?>default\view\assets\css\bootstrap.min.css">
-
 <link rel="stylesheet" type="text/css" href="<?php echo DIR_APP ?>default\view\assets\fonts\line-icons.css">
 
 <link rel="stylesheet" type="text/css" href="<?php echo DIR_APP ?>default\view\assets\css\nivo-lightbox.css">

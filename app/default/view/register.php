@@ -22,35 +22,14 @@
 <div class="col-lg-8 col-md-12 col-xs-12">
 <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
 <div class="form-wrapper">
+	<?php
+		if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
+    ?>
 <form role="form" method="post" id="registerForm" name="register-form" data-toggle="validator">
 <div class="row">
-<div class="col-md-6 form-line">
-<div class="form-group">
-<input type="text" class="form-control" id="name" name="ten" placeholder="Tên" required="" data-error="Vui lòng điền tên">
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<div class="col-md-6 form-line">
-<div class="form-group">
-<input type="text" class="form-control" id="name" name="hovatendem" placeholder="Họ và tên đệm" required="" data-error="Vui lòng điền họ và tên đệm">
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<div class="col-md-6 form-line">
-<div class="form-group">
-<input type="number" class="form-control" id="mssv" name="mssv" placeholder="Mã số sinh viên" required="" data-error="Vui lòng điền mã số sinh viên">
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<div class="col-md-6 form-line">
-<div class="form-group">
-<input type="text" class="form-control" id="lop" name="lop" placeholder="Lớp" required="" data-error="Vui lòng điền lớp">
-<div class="help-block with-errors"></div>
-</div>
-</div>
 <div class="col-md-12 form-line">
 <div class="form-group">
-<input type="email" class="form-control" id="msg_subject" name="email" placeholder="Email" required="" data-error="Vui lòng điền email">
+<p class="text-center">Hãy đảm bảo thông tin của bạn là chính xác.</p>
 <div class="help-block with-errors"></div>
 </div>
 </div>
@@ -59,18 +38,27 @@
 <textarea class="form-control" rows="4" id="message" name="message" required="" data-error="Write your message"></textarea> -->
 </div>
 <div class="form-submit">
-<button type="submit" class="btn btn-common" id="form-submit" name="register"><i class="fa fa-paper-plane" aria-hidden="true"></i> Đăng ký</button>
+<button type="submit" class="btn btn-common" id="nutdk" name="register"><i class="fa fa-paper-plane" aria-hidden="true"></i> Đăng ký</button>
 <!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
 <?php if(isset($this->message)) {echo $this->message;} ?>
 </div>
 </div>
 </div>
 </form>
+<?php  }
+	else{
+		echo '<div class="alert alert-danger text-center"  role="alert">
+          Bạn phải đăng nhập để đăng ký vé
+        </div>';
+	}
+?>
 </div>
 </div>
 </div>
 </div>
 </div>
+
+
 </section>
 
 

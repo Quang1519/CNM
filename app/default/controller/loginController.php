@@ -17,10 +17,12 @@
               //Code
               $mssv = $val['mssv'];
               $ten = $val['ten'];
+              $hoten = $val['hovaten'];
               $phanquyen = $val['phanquyen'];
               $_SESSION['mssv']=$mssv;
               $_SESSION['phanquyen']=$phanquyen;
               $_SESSION['ten']=$ten;
+              $_SESSION['hoten']=$hoten;
             }else{
               $this->view->message =
           '<div class="alert alert-danger mt-3" role="alert">
@@ -35,7 +37,7 @@
           </div>';
         }
 				}
-        if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])){
+        if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
           echo '<script type="text/javascript">window.location="index.html"</script>';
         }
         $this->view->render('login');

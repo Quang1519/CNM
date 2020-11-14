@@ -66,7 +66,7 @@ Nhận vé
 <p class="banner-desc">
 Ngày hội sinh viên tại trường vào buổi sáng có cộng điểm rèn luyện và lễ khai giảng được diễn ra vào buổi chiều.</p>
 <div class="banner-btn">
-<a href="#" class="btn btn-common">Nhận vé</a>
+
 </div>
 </div>
 </div>
