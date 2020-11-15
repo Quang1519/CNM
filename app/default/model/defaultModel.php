@@ -21,12 +21,14 @@ class defaultModel extends Model {
 
   }
 
+
   public function register($ten,$hoten,$mssv){
     $url = "https://ptta-cnm.herokuapp.com/dangkyve/create/".rawurlencode($hoten."/".$mssv."/".$ten."/0");
     $result = $this->loaddulieu($url);
-    return $result;
-  }
 
+  // public function load(){
+  //   $url =
+  }
 }
 
 
