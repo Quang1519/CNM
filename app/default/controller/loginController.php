@@ -28,6 +28,7 @@
           '<div class="alert alert-danger mt-3" role="alert">
             Bạn đã nhập sai mật khẩu hoặc tài khoản
           </div>';
+
             }
           }
         }else{
@@ -35,16 +36,18 @@
           '<div class="alert alert-danger mt-3" role="alert">
             Tài khoản của bạn không hợp lệ
           </div>';
+
         }
 				}
         if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
-          echo '<script type="text/javascript">window.location="index.html"</script>';
+          // echo '<script type="text/javascript">window.location="index.html"</script>';
+
         }
         $this->view->render('login');
       }
-      
+
 
     }
-  
+
 
 ?>
