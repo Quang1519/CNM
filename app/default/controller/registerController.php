@@ -2,11 +2,9 @@
   class registerController extends Controller {
     public function index() {
       if(isset($_REQUEST['register'])){
-
         $ten = $_SESSION['ten'];
         $hoten = $_SESSION['hoten'];
         $mssv = $_SESSION['mssv'];
-
         $result = $this->model->register($ten,$hoten,$mssv);
         foreach ($result as $value) {
             if($value){
@@ -19,10 +17,8 @@
           Đăng ký thất bại
         </div>';
         }
-        }
-        
+        } 
       }
-
       $this->view->render('register');
     }
   }
