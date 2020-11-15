@@ -6,7 +6,6 @@
       // $this->model->test();
       // print_r($_SESSION);
       // die();
-
       $this->view->render('index');
     }
 

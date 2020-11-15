@@ -1,41 +1,67 @@
-<div class="sidebar-menu">
-  <div class="sidebar-header">
-      <div class="logo">
-          <a href="#"><img src="<?php echo DIR_APP ?>admin/view/assets/images/icon/logo.png" alt="logo"></a>
-      </div>
-  </div>
-  <div class="main-menu">
-      <div class="menu-inner">
-          <nav>
-              <ul class="metismenu" id="menu">
-                  <li class="active">
-                      <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>Trang chủ</span></a>
-                      <ul class="collapse">
-                          <li class="active"><a href="#">Active Menu Item</a></li>
-                          <li><a href="#">Menuitem 2</a></li>
-                          <li><a href="#">Menuitem 3</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#"><i class="ti-map-alt"></i><span>Not expanding</span></a></li>
-                  <li>
-                      <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-align-left"></i>
-                          <span>Multi
-                              level menu</span></a>
-                      <ul class="collapse">
-                          <li><a href="#">Item level (1)</a></li>
-                          <li><a href="#">Item level (1)</a></li>
-                          <li><a href="#" aria-expanded="true">Item level (1)</a>
-                              <ul class="collapse">
-                                  <li><a href="#">Item level (2)</a></li>
-                                  <li><a href="#">Item level (2)</a></li>
-                                  <li><a href="#">Item level (2)</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Item level (1)</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </nav>
-      </div>
-  </div>
+<div class="left-side-menu">
+
+    <div class="slimscroll-menu">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+
+            <ul class="metismenu" id="side-menu">
+
+                <li class="menu-title">Navigation</li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="remixicon-dashboard-line"></i>
+                        <span class="badge badge-pink badge-pill float-right">2</span>
+                        <span> Dashboards </span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="index.html">Dashboard 1</a>
+                        </li>
+                        <li>
+                            <a href="dashboard-2.html">Dashboard 2</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="remixicon-stack-line"></i>
+                        <span> Apps </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="apps-kanbanboard.html">Kanban Board</a>
+                        </li>
+                        <li>
+                            <a href="apps-companies.html">Companies</a>
+                        </li>
+                        <li>
+                            <a href="apps-calendar.html">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="apps-filemanager.html">File Manager</a>
+                        </li>
+                        <li>
+                            <a href="apps-tickets.html">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="apps-team.html">Team Members</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Sidebar -left -->
+
 </div>

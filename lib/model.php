@@ -2,7 +2,7 @@
 class Model {
 
    function loaddulieu($url){
-    	$get = file_get_contents($url);
+    $get = file_get_contents($url);
 		$ketqua = json_decode($get, true);
 		return $ketqua;
 	}
