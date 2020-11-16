@@ -6,6 +6,7 @@
 <body>
 
 <?php include 'components/header.php' ?>
+<?php include 'components/script.php' ?>
 
 
 <section id="contact-map" class="section-padding">
@@ -22,36 +23,17 @@
 <div class="col-lg-8 col-md-12 col-xs-12">
 <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
 <div class="form-wrapper">
-	<?php
-		if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
-    ?>
+	
 <form role="form" method="post" id="registerForm" name="register-form" data-toggle="validator">
 <div class="row">
-<div class="col-md-12 form-line">
-<div class="form-group">
-<p class="text-center">Hãy đảm bảo thông tin của bạn là chính xác.</p>
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<!-- <div class="col-md-12">
-<div class="form-group">
-<textarea class="form-control" rows="4" id="message" name="message" required="" data-error="Write your message"></textarea> -->
-</div>
-<div class="form-submit">
-<button type="submit" class="btn btn-common" id="nutdk" name="register"><i class="fa fa-paper-plane" aria-hidden="true"></i> Đăng ký</button>
+<?php $this->page->dangky();  ?>
 <!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
 <?php if(isset($this->message)) {echo $this->message;} ?>
 </div>
 </div>
 </div>
 </form>
-<?php  }
-	else{
-		echo '<div class="alert alert-danger text-center"  role="alert">
-          Bạn phải đăng nhập để đăng ký vé
-        </div>';
-	}
-?>
+
 </div>
 </div>
 </div>
@@ -65,6 +47,14 @@
 
 <?php include 'components/footer.php' ?>
 
-<?php include 'components/script.php' ?>
+
+<?php
+		if(empty($_SESSION['mssv'])&&empty($_SESSION['phanquyen'])&&empty($_SESSION['ten'])&&empty($_SESSION['hoten'])){
+			echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Bạn chưa đăng nhập', 'Bạn phải đăng nhập để thực hiện đăng ký vé', 'Xác nhận', function(){
+				window.location='login.html';
+			} ); </script>";
+		}
+    ?>
+    
 </body>
 </html>

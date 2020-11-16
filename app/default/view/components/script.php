@@ -12,3 +12,4 @@
 <script src="<?php echo DIR_APP ?>default\view\assets\js\main.js"></script>
 <script src="<?php echo DIR_APP ?>default\view\assets\js\form-validator.min.js"></script>
 <script src="<?php echo DIR_APP ?>default\view\assets\js\contact-form-script.min.js"></script>
+<script src="/CNM/public/Notiflix-2.6.0/dist/notiflix-aio-2.6.0.min.js"></script>

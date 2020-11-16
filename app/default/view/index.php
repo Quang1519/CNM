@@ -7,7 +7,7 @@
 <body>
 
 <?php include 'components/header.php' ?>
-
+<?php include 'components/script.php' ?>
 <section id="count">
 <div class="container">
 <div class="row justify-content-center">
@@ -190,6 +190,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <?php include 'components/footer.php' ?>
 
 
-<?php include 'components/script.php' ?>
+
 </body>
 </html>

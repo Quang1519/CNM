@@ -7,7 +7,7 @@
 <body>
 
 <?php include 'components/header.php' ?>
-
+<?php include 'components/script.php' ?>
 
 <section id="contact-map" class="section-padding">
 <div class="container">
@@ -64,36 +64,6 @@
 
 <?php include 'components/footer.php' ?>
 
-<?php include 'components/script.php' ?>
-
-<script src="/CNM/public/Notiflix-2.6.0/dist/notiflix-aio-2.6.0.min.js"></script>
-<script>
-
-   Notiflix.Notify.Init({
-     width:'300px',
-     fontSize:'14px',
-     timeout:4000,
-     zindex: 9999,
-     messageMaxLength:200,
-     position: 'right-bottom',
-    });
-  // function alert_login_success(){
-    $("#alert_dangnhap").on("click", function(event){
-      Notiflix.Notify.Success("Dang nhap thanh cong");
-    });
-  // }
-
-  function alert_login_fail(){
-    // $("#alert_login").on("click", function(event){
-      Notiflix.Notify.Failure("Dang nhap that bai");
-  }
-
-
-  <?php
-  if(isset($this->message)){
-    echo "alert_login_fail();";
-  };
-  ?>
 
 
 </script>

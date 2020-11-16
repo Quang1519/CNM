@@ -1,6 +1,11 @@
 <?php
   class registerController extends Controller {
     public function index() {
+      if(isset($_SESSION['mssv'])){
+        $resultkt = $this->model->kiemtra($_SESSION['mssv']);
+      }else{
+        $resultkt = 0;
+      }
       if(isset($_REQUEST['register'])){
         $ten = $_SESSION['ten'];
         $hoten = $_SESSION['hoten'];
@@ -19,7 +24,8 @@
         }
         } 
       }
-      $this->view->render('register');
+      $this->view->data=['kiemtra'=>$resultkt];
+      $this->view->render('register','registerView');
     }
   }
 ?>

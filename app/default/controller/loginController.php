@@ -40,7 +40,7 @@
         }
 				}
         if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
-          // echo '<script type="text/javascript">window.location="index.html"</script>';
+          echo '<script type="text/javascript">window.location="index.html"</script>';
 
         }
         $this->view->render('login');

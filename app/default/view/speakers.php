@@ -6,7 +6,7 @@
 <body>
 
 <?php include 'components/header.php' ?>
-
+<?php include 'components/script.php' ?>
 <section id="team" class="section-padding text-center">
 <div class="container">
 <div class="row">
@@ -391,6 +391,6 @@
 
 <?php include 'components/footer.php' ?>
 
-<?php include 'components/script.php' ?>
+
 </body>
 </html>

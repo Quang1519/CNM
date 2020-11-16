@@ -6,7 +6,7 @@
 <body>
 
 <?php include 'components/header.php' ?>
-
+<?php include 'components/script.php' ?>
 
 
 <!-- <section id="about" class="section-padding">
@@ -486,6 +486,6 @@ Workshop
 
 <?php include 'components/footer.php' ?>
 
-<?php include 'components/script.php' ?>
+
 </body>
 </html>
