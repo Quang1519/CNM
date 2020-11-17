@@ -54,7 +54,7 @@
                 </li>
 
                 <li>
-                    <a href="admin/create.html" class="waves-effect">
+                    <a href="admin/addUsers.html" class="waves-effect">
                     <i class="remixicon-add-circle-line "></i>
                     <span>Thêm tài khoản</span>
                     </a>

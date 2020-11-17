@@ -44,7 +44,7 @@ class defaultModel extends Model {
       return false;
     }
     else{
-      return $result;
+      return true;
     }
   }
 }

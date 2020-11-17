@@ -5,7 +5,10 @@
        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\footable\footable.core.min.css" rel="stylesheet" type="text/css">
        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
 
-       <style>
+        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.css" rel="stylesheet" type="text/css">
+        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+       <!-- <style>
           .pagination-rounded .page-link {
             border-radius:3px !important;
             margin:0 1.5px;
@@ -27,7 +30,7 @@
           .far {
             line-height: unset;
           }
-       </style>
+       </style> -->
     </head>
 
     <body>
@@ -70,100 +73,60 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="card-box">
-                                    <h4 class="header-title">Filtering</h4>
+                                    <h4 class="header-title">Add &amp; Remove Rows</h4>
                                     <p class="sub-header">
-                                        include filtering in your FooTable.
+                                        Add or remove rows from your FooTable.
                                     </p>
 
                                     <div class="mb-2">
                                         <div class="row">
                                             <div class="col-12 text-sm-center form-inline">
+                                                <!-- <div class="form-group mr-2">
+                                                    <button id="demo-btn-addrow" class="btn btn-primary"><i class="mdi mdi-plus-circle mr-2"></i> Add New Row</button>
+                                                </div> -->
                                                 <div class="form-group mr-2">
-                                                    <!-- <button id="demo-btn-addrow" class="btn btn-primary"><i class="mdi mdi-plus-circle mr-2"></i> Add New Row</button> -->
                                                     <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#con-close-modal"><i class="mdi mdi-plus-circle mr-2"></i> Tạo tài khoản mới</button>
                                                 </div>
-
                                                 <div class="form-group">
-                                                    <input id="demo-input-search2" type="text" placeholder="Tìm kiếm" class="form-control" autocomplete="off">
+                                                    <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
                                                 </div>
-                                                <!-- <div class="form-group ml-auto">
-                                                    <select id="demo-foo-filter-status" class="custom-select custom-select">
-                                                        <option value="">Show all</option>
-                                                        <option value="active">Active</option>
-                                                        <option value="disabled">Disabled</option>
-                                                        <option value="suspended">Suspended</option>
-                                                    </select>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
-
-
-                                    <!-- Table here -->
                                     <div class="table-responsive">
-                                        <table id="demo-foo-filtering" class="table table-bordered table-hover ">
-                                            <thead class="thead-light">
-                                            <tr class="">
-                                                <th class="header-title text-dark">Mssv
-                                                <span class="far fa-caret-square-down float-right "></span>
-                                                </th>
-                                                <th class="header-title text-dark">Họ và tên đệm
-                                                <span class="far fa-caret-square-down float-right "></span>
-                                                </th>
-                                                <th class="header-title text-dark">Tên
-                                                <span class="far fa-caret-square-down float-right "></span>
-                                                </th>
-                                                <th class="header-title text-dark">Lớp
-                                                <span class="far fa-caret-square-down float-right "></span>
-                                                </th>
-                                                <th class="header-title text-dark">Trạng thái
-                                                <span class="far fa-caret-square-down float-right "></span>
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <?php $this->page->createTable(); ?>
-                                            <tr>
-                                                <td>Lauri</td>
-                                                <td>Hyland</td>
-                                                <td>Blackjack Supervisor</td>
-                                                <td>15 Nov 1985</td>
-                                                <td><span class="badge label-table badge-danger">Suspended</span></td>
-                                            </tr>
-                                            </tbody>
-                                            <tfoot>
-                                            <tr >
-                                                <td colspan="5">
-                                                    <div class="">
-                                                        <!-- <ul class="pagination pagination-rounded justify-content-end footable-pagination m-t-10 mb-0"></ul> -->
-                                                        <nav>
-                                                        <ul class="pagination pagination-rounded justify-content-end mb-0">
-                                                            <li class="page-item">
-                                                                <a class="page-link" href="#" aria-label="Previous">
-                                                                    <span aria-hidden="true">&laquo;</span>
-                                                                    <span class="sr-only">Previous</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                            <li class="page-item">
-                                                                <a class="page-link" href="#" aria-label="Next">
-                                                                    <span aria-hidden="true">&raquo;</span>
-                                                                    <span class="sr-only">Next</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        </nav>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tfoot>
-                                        </table>
+                                    <!-- demo-foo-addrow -->
+                                    <table id="demo-foo-addrow" class="table table-hover table-bordered toggle-circle mb-0" data-page-size="7">
+                                        <thead class="table-purple">
+                                        <tr>
+                                            <!-- <th data-sort-ignore="true" class="min-width"></th> -->
+                                            <th class="text-dark min-width">STT</th>
+                                            <th data-sort-ignore="true" class="text-dark">MSSV</th>
+                                            <th data-sort-initial="true" data-toggle="true" class="text-dark">Họ và tên </th>
+                                            <th class="text-dark">Tên</th>
+                                            <th class="text-dark">Ngày sinh</th>
+                                            <th data-sort-ignore="true" class="text-dark">Lớp</th>
+                                            <th data-sort-ignore="true" class="text-dark">Khoa</th>
+                                            <th data-sort-ignore="true" class="text-dark">Ngành</th>
+                                            <th data-sort-ignore="true" class="text-dark">Trạng thái</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php $this->page->createTable(); ?>
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr class="active">
+                                            <td colspan="9">
+                                                <div class="text-right">
+                                                    <ul class="pagination pagination-split justify-content-end footable-pagination m-t-10"></ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
                                     </div>
-                                    <!-- end .table-responsive-->
                                 </div> <!-- end card-box -->
                             </div> <!-- end col -->
                         </div>
@@ -194,30 +157,40 @@
                                                   <label for="field-2" class="control-label">Tên</label>
                                                   <input type="text" class="form-control" id="field-2" placeholder="Văn" name="ten" required>
                                                   <div class="invalid-feedback">
-                                                    Vui lòng tên
+                                                    Vui lòng điền tên
                                                   </div>
                                               </div>
                                           </div>
                                       </div>
                                       <div class="form-row">
-                                          <div class="col-md-12">
-                                              <!-- <div class="form-group">
-                                                  <label for="field-3" class="control-label">Address</label>
-                                                  <input type="text" class="form-control" id="field-3" placeholder="Address">
-                                              </div> -->
+
+                                        <div class="col-md-12 ">
                                             <div class="form-group">
-                                              <label class="control-label ">Năm sinh</label>
-                                              <!-- <div class="col-md-12"> -->
-                                                  <div class="input-group">
-                                                      <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd/mm/yyyy" id="date" name="namsinh" required>
-                                                      <!-- <div class="input-group-append">
-                                                          <span class="input-group-text"><i class="ti-calendar"></i></span>
-                                                      </div> -->
+                                            <label for="sex" class="control-label">Giới tính</label>
+                                            <div class=" form-inline" id="sex">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio1" name="gioitinh" value="1" class="custom-control-input" checked>
+                                                    <label class="custom-control-label" for="customRadio1">Nam</label>
+                                                </div>
+
+                                                <div class="custom-control custom-radio ml-2">
+                                                    <input type="radio" id="customRadio2" name="gioitinh" class="custom-control-input" value="0">
+                                                    <label class="custom-control-label" for="customRadio2">Nữ</label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="form-row">
+                                          <div class="col-md-12">
+                                            <div class="form-group">
+                                              <label class="control-label ">Ngày sinh</label>
+                                                  <!-- <div class="input-group"> -->
+                                                      <input type="text" class="form-control" data-provide="datepicker" data-date-autoclose="true" placeholder="dd/mm/yyyy" id="date" name="ngaysinh" required>
                                                       <div class="invalid-feedback">
                                                         Vui lòng điền ngày tháng năm sinh
                                                       </div>
-                                                  </div>
-                                              <!-- </div> -->
+                                                  <!-- </div> -->
                                             </div>
                                           </div>
                                       </div>
@@ -255,6 +228,38 @@
                                               </div>
                                           </div>
                                       </div> -->
+                                      <div class="form-row">
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                    <label for="khoa" class="control-label">Khoa</label>
+                                                    <!-- <select id="khoa" name="khoa" class=" custom-select" required>
+                                                        <option value="">Chọn ...</option>
+                                                        <option value="1">Hot Dog, Fries and a Soda</option>
+                                                        <option value="2">Burger, Shake and a Smile</option>
+                                                        <option value="3">Sugar, Spice and all things nice</option>
+                                                    </select> -->
+                                                    <input type="text" class="form-control" id="khoa" placeholder="Công Nghệ Thông Tin" name="khoa" required>
+                                                    <div class="invalid-feedback">
+                                                    Vui lòng điền khoa
+                                                    </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                                <div class="form-group">
+                                                <label for="nganh" class="control-label">Ngành</label>
+                                                    <!-- <select id="nganh" name="nganh" class=" custom-select" required>
+                                                        <option value="">Chọn ...</option>
+                                                        <option value="1">Hot Dog, Fries and a Soda</option>
+                                                        <option value="2">Burger, Shake and a Smile</option>
+                                                        <option value="3">Sugar, Spice and all things nice</option>
+                                                    </select> -->
+                                                    <input type="text" class="form-control" id="nganh" placeholder="Hệ thống thông tin" name="nganh" required>
+                                                    <div class="invalid-feedback">
+                                                    Vui lòng điền ngành
+                                                    </div>
+                                                </div>
+                                          </div>
+                                      </div>
                                   </div>
                                   <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Đóng</button>
@@ -289,32 +294,26 @@
         <!-- Right bar overlay-->
         <?php include "components/script.php"; ?>
 
-        <!-- <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\footable\footable.all.min.js"></script>
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\footable\footable.all.min.js"></script>
 
 
-        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\foo-tables.init.js"></script> -->
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\foo-tables.init.js"></script>
 
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.js"></script>
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.js"></script>
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.js"></script>
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\form-advanced.init.js"></script>
 
         <script>
+            $(function(){
+                $( "#date" ).datepicker({
+                    dateFormat: 'dd-mm-yyyy',//check change
+                    changeMonth: true,
+                    changeYear: true
+                });
+            })
 
-          // (function() {
-          //   'use strict';
-          //   window.addEventListener('load', function() {
-          //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          //     var forms = document.getElementsByClassName('needs-validation');
-          //     // Loop over them and prevent submission
-          //     var validation = Array.prototype.filter.call(forms, function(form) {
-          //       form.addEventListener('submit', function(event) {
-          //         if (form.checkValidity() === false) {
-          //           // event.preventDefault();
-          //           // event.stopPropagation();
-          //         }
-          //         // form.classList.add('was-validated');
-          //       }, false);
-          //     });
-          //   }, false);
-          // })();
+
 
         </script>
 
