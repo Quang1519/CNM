@@ -22,7 +22,7 @@
           Đăng ký thất bại
         </div>';
         }
-        } 
+        }
       }
       $this->view->data=['kiemtra'=>$resultkt];
       $this->view->render('register','registerView');

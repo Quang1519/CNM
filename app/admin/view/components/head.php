@@ -4,7 +4,7 @@
 <!-- <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"> -->
 <meta content="Coderthemes" name="author">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- <base href="http://localhost:8080/CNM/"> -->
+<base href="http://localhost:8080/CNM/">
 <!-- App favicon -->
 <link rel="shortcut icon" href="<?php echo constant("DIR_APP"); ?>admin\view\assets\images\favicon.ico">
 
