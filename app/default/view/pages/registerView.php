@@ -30,7 +30,7 @@ class registerView
 <button type="submit" class="btn btn-common" id="nutdk" name="register"><i class="fa fa-paper-plane" aria-hidden="true"></i> Đăng ký</button>';
  			}
  		}
- 	}   
+ 	}  
 }
 
 ?>
