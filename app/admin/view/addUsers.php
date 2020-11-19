@@ -304,18 +304,5 @@
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.js"></script>
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\form-advanced.init.js"></script>
 
-        <script>
-            $(function(){
-                $( "#date" ).datepicker({
-                    dateFormat: 'dd-mm-yyyy',//check change
-                    changeMonth: true,
-                    changeYear: true
-                });
-            })
-
-
-
-        </script>
-
     </body>
 </html>

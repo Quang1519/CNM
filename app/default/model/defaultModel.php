@@ -2,6 +2,8 @@
 
 class defaultModel extends Model {
 
+  protected $link = "https://ptta-cnm.herokuapp.com/";
+
   public function login($username,$password){
     $url = "https://ptta-cnm.herokuapp.com/taikhoan/".$username;
     $result = $this->loaddulieu($url);
@@ -38,13 +40,13 @@ class defaultModel extends Model {
       $numrow=$key;
     }
     if ($numrow>0) {
-      return false;
+      return 0;
     }elseif ($numrow == -1) {
       # code...
-      return false;
+      return 0;
     }
     else{
-      return true;
+      return 1;
     }
   }
   public function sukien()
@@ -54,9 +56,9 @@ class defaultModel extends Model {
       return $result;
   }
   public function thongtin($mssv)
-  { 
+  {
     $url= "https://ptta-cnm.herokuapp.com/taikhoan/".$mssv;
-    $result = $this->loaddulieu($url); 
+    $result = $this->loaddulieu($url);
     $numrow=-1;
     foreach($result as $key => $val){
       $numrow=$key;
@@ -70,6 +72,12 @@ class defaultModel extends Model {
     else{
       return $result;
     }
+  }
+
+
+  public function changePass($mssv, $password){
+    $url = $this->link."/taikhoan/updatepass/".$mssv."/".$password;
+    return $this->themxoasua($url);
   }
 }
 

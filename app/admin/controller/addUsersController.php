@@ -10,7 +10,7 @@
 
         $data['mssv'] = $_REQUEST['mssv'];
         $data['nganh'] = $_REQUEST['nganh'];
-        $data['ngaysinh'] = 1999;
+        $data['ngaysinh'] = str_replace("/", "-", $_REQUEST['ngaysinh']);
         $data['password'] = md5(1111);
         $data['phanquyen'] = 0;
         $data['ten'] = $_REQUEST['ten'];

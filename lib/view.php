@@ -10,6 +10,7 @@
             include 'app/'.$this->request['app'].'/view/pages/'.$page.'.php';
             $this->page = new $page;
             $this->page->data = $this->data;
+
             include 'app/'.$this->request['app'].'/view/'.$view.'.php';
         }
         else {

@@ -23,7 +23,7 @@
 <div class="col-lg-8 col-md-12 col-xs-12">
 <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
 <div class="form-wrapper">
-	
+
 <form role="form" method="post" id="registerForm" name="register-form" data-toggle="validator">
 <div class="row">
 <?php $this->page->dangky();  ?>
@@ -45,6 +45,8 @@
 
 
 
+
+
 <?php include 'components/footer.php' ?>
 
 
@@ -55,6 +57,6 @@
 			} ); </script>";
 		}
     ?>
-    
+
 </body>
 </html>

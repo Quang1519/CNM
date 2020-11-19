@@ -6,7 +6,6 @@
       if(isset($_REQUEST['login'])){
         $username = $_REQUEST['username'];
         $password = md5($_REQUEST['password']);
-
         $user = $this->model->login($username,$password);
         if ($user!=false) {
           # code...
@@ -14,7 +13,7 @@
             $user=$val['username'];
             $pass=$val['password'];
             if ($user==$username && $pass==$password) {
-              //Code
+              // Code
               $mssv = $val['mssv'];
               $ten = $val['ten'];
               $hoten = $val['hovaten'];
@@ -31,22 +30,24 @@
 
             }
           }
-        }else{
+        }
+        else {
           $this->view->message =
           '<div class="alert alert-danger mt-3" role="alert">
             Tài khoản của bạn không hợp lệ
           </div>';
-
         }
-				}
-        if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
+      }
+
+      if(isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])&&isset($_SESSION['hoten'])){
           echo '<script type="text/javascript">window.location="index.html"</script>';
-
-        }
-        $this->view->render('login');
       }
 
 
+      $this->view->render('login');
+
+
+      }
     }
 
 

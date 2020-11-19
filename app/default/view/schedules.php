@@ -68,138 +68,71 @@
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
 <div id="accordion">
-	<div class="card">
-	<div id="headingOne">
-	<div class="schedule-slot-time">
-	<span>Thông Tin</span>
-	Sinh Viên
-	</div>
 	<?php $this->page->thongtinsinhvien(); ?>
+	<div class="card">
+	<div id="headingTwo">
+	<div class="schedule-slot-time">
+	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
+	<!-- <h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6> -->
+	Thay đổi mật khẩu
+	</div>
+	<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		<div class="images-box">
+		<!-- <img class="img-fluid" src="assets\img\speaker\speakers-2.jpg" alt=""> -->
+		</div>
+	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
+		<h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6>
 	</div>
 	</div>
-</div>
-</div>
-<!-- <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
-<div id="accordion2">
-<div class="card">
-<div id="headingOne1">
-<div class="schedule-slot-time">
-<span> 1.30 - 2.30 AM</span>
-Workshop
-</div>
-<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-<div class="images-box">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\speaker\speakers-2.jpg" alt="">
-</div>
-<h4>Web Design Principles and Best Practices</h4>
-<h5 class="name">David Warner</h5>
-</div>
-</div>
-<div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion2">
-<div class="card-body">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-<div class="location">
-<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-</div>
-</div>
-</div>
-</div>
-<div class="card">
-<div id="headingTwo2">
-<div class="schedule-slot-time">
-<span> 9.30 - 10.30 AM</span>
-Workshop
-</div>
-<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-<div class="images-box">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\speaker\speakers-1.jpg" alt="">
-</div>
-<h4>Web Design Principles and Best Practices</h4>
-<h5 class="name">David Warner</h5>
-</div>
-</div>
-<div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
-<div class="card-body">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-<div class="location">
-<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-</div>
-</div>
-</div>
-</div>
-</div>
-</div> -->
-<div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
- <div id="accordion3">
-<!-- <div class="card">
-<div id="headingOne3">
-<div class="schedule-slot-time">
-<span> 10.30 - 11.30 AM</span>
-Workshop
-</div>
-<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
-<div class="images-box">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\speaker\speakers-1.jpg" alt="">
-</div>
-<h4>Web Design Principles and Best Practices</h4>
-<h5 class="name">David Warner</h5>
-</div>
-</div>
-<div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordion3">
-<div class="card-body">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-<div class="location">
-<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-</div>
-</div>
-</div>
-</div> -->
-<!-- <div class="card">
-<div id="headingTwo3">
-<div class="schedule-slot-time">
-<span> 11.30 - 12.30 AM</span>
-Workshop
-</div>
-<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
-<div class="images-box">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\speaker\speakers-2.jpg" alt="">
-</div>
-<h4>Web Design Principles and Best Practices</h4>
-<h5 class="name">David Warner</h5>
-</div>
-</div>
-<div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo3" data-parent="#accordion3">
-<div class="card-body">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-<div class="location">
-<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-</div>
-</div>
-</div>
-</div> -->
-<!-- <div class="card">
-<div id="headingThree3">
-<div class="schedule-slot-time">
-<span> 1.30 - 2.30 AM</span>
-Workshop
-</div>
-<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-<div class="images-box">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\speaker\speakers-3.jpg" alt="">
-</div>
-<h4>Web Design Principles and Best Practices</h4>
-<h5 class="name">David Warner</h5>
-</div>
-</div>
-<div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordion3">
-<div class="card-body">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet minima dolores rerum maiores qui at commodi quas, reprehenderit eius consectetur quae magni molestias veniam, provident illum facere iure libero asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam earum nihil ex ipsa magni eligendi fugiat assumenda suscipit, accusantium, necessitatibus reiciendis odit sed, vero amet blanditiis?</p>
-<div class="location">
-<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-</div>
-</div>
-</div>
-</div> -->
+	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+	<div class="card-body">
+
+	<!-- <h4 class="h4 section-title wow fadeInUp" data-wow-delay="0.2s">Thông tin sinh viên</h4> -->
+	<div class="col-md-12">
+	<!-- <div class="form-wrapper"> -->
+  <!-- <form role="form" method="post" id="loginForm" name="login-form" data-toggle="validator"> -->
+			<div class="card-box">
+					<!-- <h4 class="header-title mb-3">Horizontal form</h4> -->
+
+					<form class="form-horizontal" name="changePass" role="form" method="post" data-toggle="validator">
+							<div class="form-group row">
+									<label for="inputEmail3" class="col-sm-3 col-form-label">Mật khẩu hiện tại</label>
+									<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputEmail3" name="oldPass" placeholder="Nhập khẩu hiện tại" required data-error="Vui lòng điền mật khẩu hiện tại">
+                			<div class="help-block with-errors"></div>
+                	</div>
+							</div>
+							<div class="form-group row">
+									<label for="inputPassword3" class="col-sm-3 col-form-label">Mật khẩu mới</label>
+									<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputPassword3" name="newPass"  placeholder="Nhập khẩu mới" required data-error="Vui lòng điền mật khẩu mới">
+											<div class="help-block with-errors"></div>
+									</div>
+							</div>
+							<div class="form-group row">
+									<label for="inputPassword5" class="col-sm-3 col-form-label">Nhập lại mật khẩu mới</label>
+									<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputPassword5" name="reNewPass"  placeholder="Nhập lại mật khẩu mới" required data-error="Vui lòng điền lại mật khẩu mới">
+											<div class="help-block with-errors"></div>
+									</div>
+							</div>
+
+							<div class="form-group mb-0 justify-content-end row">
+									<div class="col-sm-9">
+											<button type="submit" name="changePass" class="btn btn-common">Xác nhận</button>
+									</div>
+							</div>
+					</form>
+			</div>
+	</div>
+
+	<!-- <div class="location">
+	<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+	</div> -->
+	</div>
+	</div>
+	</div>
+
 </div>
 </div>
 
@@ -216,8 +149,30 @@ Workshop
 </div>
 </section>
 
-<?php include 'components/footer.php' ?>
 
+<?php include 'components/footer.php' ?>
+<?php
+
+	switch ($this->message){
+		case 0:
+			echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
+				;
+			} ); </script>";
+		break;
+		case 1:
+			echo "<script type=\"text/javascript\"> Notiflix.Report.Success( 'Đổi mật thành công', 'Vui lòng đăng nhập lại', 'Xác nhận', function(){
+				window.location ='login.html';
+			} ); </script>";
+		break;
+	}
+
+		// if(isset($this->message)){
+		// 	echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
+		// 		;
+		// 	} ); </script>";
+		// }
+
+    ?>
 
 </body>
 </html>

@@ -190,6 +190,5 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <?php include 'components/footer.php' ?>
 
 
-
 </body>
 </html>

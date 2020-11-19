@@ -2,10 +2,18 @@
   class registerController extends Controller {
     public function index() {
       if(isset($_SESSION['mssv'])){
-        $resultkt = $this->model->kiemtra($_SESSION['mssv']);
-      }else{
-        $resultkt = 0;
+
+        $password = $this->model->thongtin($_SESSION['mssv']);
+        if($password[0]['password'] == md5(1111)){
+          $resultkt = -1;
+        }else {
+          $resultkt = $this->model->kiemtra($_SESSION['mssv']);
+        }
+        // if($password) {
+
+        // }
       }
+
       if(isset($_REQUEST['register'])){
         $ten = $_SESSION['ten'];
         $hoten = $_SESSION['hoten'];

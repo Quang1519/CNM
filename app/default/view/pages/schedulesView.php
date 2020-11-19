@@ -42,7 +42,7 @@ class schedulesView
 						</div>';
     		}else{
     			echo "<script type=\"text/javascript\">
-    	
+
     		Notiflix.Report.Failure( 'Lỗi', 'Hiện tại đang có chút vấn đề xin cáo lỗi', 'Xác nhận', function(){
 				window.location='index.html';
     	});
@@ -56,41 +56,50 @@ class schedulesView
     		foreach($ketqua as  $val){
     		$gioitinh = ($val['gioitinh']==1) ? 'Nam':'Nữ';
     		$trangthai = ($val['trangthai']==0)? 'Đang học':'Nghỉ học';
-    		
-    		echo '
-    		<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-	<div class="images-box">
-	
-	</div>
-	<h4>'.$val['hovaten'].' '.$val['ten'].'</h4>
-	<h5 class="name">'.$val['mssv'].'</h5>
-	</div>
-	</div>
-	 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-	<div class="card-body">
-    		<table class="table table-borderless">
-		<tr>
-			<th>Khoa</th>
-			<th>Lớp</th>
-			<th>Giới tính</th>
-			<th>Chuyên Ngành</th>
-			<th>Ngày Sinh</th>
-			<th>Tình trạng</th>
-		</tr>
-		<tr>
-			<td>'.$val['khoa'].'</td>
-			<td>'.$val['lop'].'</td>
-			<td>'.$gioitinh.'</td>
-			<td>'.$val['nganh'].'</td>
-			<td>'.$val['ngaysinh'].'</td>
-			<td class="text-danger">'.$trangthai.'</td>
-		</tr>
-	</table>
-	</div>';
+
+				echo '
+				<div class="card">
+				<div id="headingOne">
+				<div class="schedule-slot-time">
+					Thông tin sinh viên
+				</div>
+				<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				<div class="images-box">
+				<img class="img-fluid" src="assets\img\speaker\speakers-3.jpg" alt="">
+				</div>
+				<h4>'.$val['hovaten'].' '.$val['ten'].'</h4>
+				<h5 class="name">'.$val['mssv'].'</h5>
+				</div>
+				</div>
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				<div class="card-body">
+				<table class="table table-borderless">
+				<tr>
+					<th>Khoa</th>
+					<th>Lớp</th>
+					<th>Giới tính</th>
+					<th>Chuyên Ngành</th>
+					<th>Ngày Sinh</th>
+					<th>Tình trạng</th>
+				</tr>
+				<tr>
+					<td>'.$val['khoa'].'</td>
+					<td>'.$val['lop'].'</td>
+					<td>'.$gioitinh.'</td>
+					<td>'.$val['nganh'].'</td>
+					<td>'.$val['ngaysinh'].'</td>
+					<td class="text-danger">'.$trangthai.'</td>
+				</tr>
+				</table>
+				</div>
+				</div>
+				</div>
+
+	';
     	}
     }else
     	{
-    		
+
     		echo "<script type=\"text/javascript\">
     		Notiflix.Confirm.Show('Thông báo','Bạn có muốn đăng nhập?','Yes','No',function(){window.location='login.html';});
     </script>";
