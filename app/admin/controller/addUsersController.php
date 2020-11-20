@@ -2,8 +2,8 @@
   class addUsersController extends Controller {
     public function index(){
 
+      $this->view->message = [-1];
       if(isset($_REQUEST['create'])){
-        $data = [];
         $data['gioitinh'] = $_REQUEST['gioitinh'];
         $data['hovaten'] = $_REQUEST['hovatendem'];
         $data['khoa'] = $_REQUEST['khoa'];
@@ -18,10 +18,7 @@
         $data['username'] = $_REQUEST['mssv'];
 
         $data['lop'] = $_REQUEST['lop'];
-        $result = $this->model->addUser($data);
-        // $url = "https://ptta-cnm.herokuapp.com/dangkyve/create/".rawurlencode(
-        // die();
-
+        $this->view->message = $this->model->addUser($data);
 
       }
 

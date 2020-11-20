@@ -6,6 +6,7 @@ class Model {
 		$ketqua = json_decode($get, true);
 		return $ketqua;
 	}
+
 	function themxoasua($url){
 		$p = $this->loaddulieu($url);
 		foreach($p as  $val){

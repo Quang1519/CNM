@@ -5,8 +5,8 @@
        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\footable\footable.core.min.css" rel="stylesheet" type="text/css">
        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
 
-        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.css" rel="stylesheet" type="text/css">
+        <!-- <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.css" rel="stylesheet" type="text/css"> -->
+        <!-- <link href="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.css" rel="stylesheet" type="text/css"> -->
 
        <!-- <style>
           .pagination-rounded .page-link {
@@ -90,7 +90,7 @@
                                                     <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#con-close-modal"><i class="mdi mdi-plus-circle mr-2"></i> Tạo tài khoản mới</button>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
+                                                    <input id="demo-input-search2" type="text" placeholder="Tìm kiếm" class="form-control" autocomplete="off">
                                                 </div>
                                             </div>
                                         </div>
@@ -101,11 +101,11 @@
                                         <thead class="table-purple">
                                         <tr>
                                             <!-- <th data-sort-ignore="true" class="min-width"></th> -->
-                                            <th class="text-dark min-width">STT</th>
+                                            <th data-sort-initial="true" data-toggle="true"  class="text-dark min-width">STT</th>
                                             <th data-sort-ignore="true" class="text-dark">MSSV</th>
-                                            <th data-sort-initial="true" data-toggle="true" class="text-dark">Họ và tên </th>
-                                            <th class="text-dark">Tên</th>
-                                            <th class="text-dark">Ngày sinh</th>
+                                            <th data-sort-ignore="true" class="text-dark">Họ và tên </th>
+                                            <th data-sort-ignore="true" class="text-dark">Tên</th>
+                                            <th data-sort-ignore="true" class="text-dark">Ngày sinh</th>
                                             <th data-sort-ignore="true" class="text-dark">Lớp</th>
                                             <th data-sort-ignore="true" class="text-dark">Khoa</th>
                                             <th data-sort-ignore="true" class="text-dark">Ngành</th>
@@ -300,9 +300,11 @@
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\foo-tables.init.js"></script>
 
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.js"></script>
-        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.js"></script>
-        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.js"></script>
-        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\form-advanced.init.js"></script>
+        <!-- <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\select2\select2.min.js"></script> -->
+        <!-- <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\bootstrap-select\bootstrap-select.min.js"></script> -->
+        <!-- <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\pages\form-advanced.init.js"></script> -->
+
+        <?php THONGBAO::message($this->message)?>
 
     </body>
 </html>
