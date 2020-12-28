@@ -22,7 +22,7 @@ class registerView
     	});
     </script> ";
 			break;
-			default:
+			case 0:
 			echo '<div class="col-md-12 form-line">
 			<div class="form-group">
 			<p class="text-center">Hãy đảm bảo thông tin của bạn là chính xác.</p>
