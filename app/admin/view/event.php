@@ -224,7 +224,7 @@
                                                     <div class="col-md-3">
 
                                                         <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio1" name="customRadio" checked class="custom-control-input" value="1">
+                                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
                                                             <label class="custom-control-label" for="customRadio1">Sắp diễn ra</label>
                                                         </div>
 
@@ -305,13 +305,11 @@
 
                 $(obj).find(".modal-body #add").append(dienra);
 
-                if(myValue.trangthai == 0){
-                    $(obj).find(".modal-body #add #customRadio2").attr("checked", true);
-                    $(obj).find(".modal-body #add #customRadio1").attr("checked", false);
+                if(myValue.trangthai == 1){
+                    $(obj).find(".modal-body #add #customRadio1").prop( "checked", true );
                 }
                 else{
-                    $(obj).find(".modal-body #add #customRadio2").attr("checked", false);
-                    $(obj).find(".modal-body #add #customRadio1").attr("checked", true);
+                    $(obj).find(".modal-body #add #customRadio2").prop( "checked", true );
                 }
                 // console.log(dienra);
                 // console.log(test[0]);

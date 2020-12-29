@@ -19,6 +19,8 @@
       print json_encode($result, JSON_UNESCAPED_UNICODE);
       // json_encode($result,JSON_UNESCAPED_UNICODE)
     }
+
+    // public function
   }
 
 ?>

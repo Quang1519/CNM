@@ -6,14 +6,13 @@
         $this->createTable($data);
       }
       else {
-        echo 'Khong tai duoc du lieu vui long quay lai sau';
+        echo 'Không tải được dữ liệu vui lòng quay lại sau';
       }
     }
 
-
     public function createTable($data){
       $count = 1;
-
+      $upcommingEvent = 0;
       foreach ($data as $result){
         // echo json_encode($result);
         // die();
@@ -27,6 +26,7 @@
 
         if($result['trangthai'] == 1){
           echo '<td><span class="badge label-table badge-success">Sắp diễn ra</span></td>';
+          $upcommingEvent+=1;
         }
         else {
           echo '<td><span class="badge label-table badge-danger">Đã diễn ra</span></td>';

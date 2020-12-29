@@ -1,6 +1,5 @@
 <?php
     class Controller {
-
         public function __construct($request){
             $this->request = $request;
             $this->setModel();
@@ -17,8 +16,6 @@
         public function setView(){
             $this->view = new View($this->request);
         }
-
-
     }
 
 

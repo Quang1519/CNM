@@ -39,9 +39,9 @@ class adminModel extends Model {
     return $this->loaddulieu($url);
   }
 
-  public function updateEvent($data){
-    $message = "Cập nhật sự kiện";
-    $url = $this->makeUrl("sukien/update/", $data);
+  public function Event($data, $action, $message){
+    // $message = "Cập nhật sự kiện";
+    $url = $this->makeUrl("sukien/".$action."/", $data);
     $result = $this->themxoasua($url);
     if($result){
       return [1, $message];
@@ -51,17 +51,24 @@ class adminModel extends Model {
     }
   }
 
-  public function createEvent($data){
-    $message = "Thêm mới sự kiện";
-    $url = $this->makeUrl("sukien/create/", $data);
-    $result = $this->themxoasua($url);
-    if($result){
-      return [1, $message];
+  public function checkEvent($data, $action, $message){
+    $result = $this->getEvent();
+    $count = 0;
+    $mask = '';
+    foreach($result as $val){
+      if($val['trangthai'] == 1){
+        $mask = $val['masukien'];
+        $count++;
+      }
     }
-    else {
+    if($count>0 && $mask != $data['masukien'] && $data['trangthai'] == 1){
       return [0, $message];
     }
+    else{
+      return $this->event($data, $action, $message);
+    }
   }
+
   public function getVe(){
     $url = $this->makeUrl("/dangkyve");
     return $this->loaddulieu($url);

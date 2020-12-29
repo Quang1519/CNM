@@ -6,16 +6,27 @@ class schedulesView
     	$ketqua = $this->data['sukien'];
     	foreach($ketqua as $key=>$val){
     		if(isset($val)){
+
+					if(strlen($val['diadiem']) > 30){
+						$diadiem = explode(",",$val['diadiem'],-1);
+						$diadiem = implode(", ",$diadiem);
+					}
+					else {
+						$diadiem = $val['diadiem'];
+					}
+
+
     			echo '<div class="row inforation-wrapper">
 						<div class="col-lg-3 col-md-6 col-xs-12">
 						<ul>
 						<li>
 						<i class="lni-map-marker"></i>
 						</li>
-						<li><span><b>Địa điểm</b> '.$val['diadiem'].'</span></li>
+						<li><span><b>Địa điểm</b>'.$diadiem.'</span></li>
 						</ul>
 						</div>
 						<div class="col-lg-3 col-md-6 col-xs-12">
+						<ul>
 						<ul>
 						<li>
 						<i class="lni-calendar"></i>
