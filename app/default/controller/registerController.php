@@ -1,6 +1,7 @@
 <?php
   class registerController extends Controller {
     public function index() {
+      $resultkt=0;
       if(isset($_SESSION['mssv'])){
 
         $password = $this->model->thongtin($_SESSION['mssv']);
@@ -31,6 +32,7 @@
         </div>';
         }
         }
+
       }
       $this->view->data=['kiemtra'=>$resultkt];
       $this->view->render('register','registerView');

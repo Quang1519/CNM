@@ -62,6 +62,10 @@ class adminModel extends Model {
       return [0, $message];
     }
   }
+  public function getVe(){
+    $url = $this->makeUrl("/dangkyve");
+    return $this->loaddulieu($url);
+  }
 
 }
 
