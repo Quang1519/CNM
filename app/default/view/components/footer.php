@@ -53,7 +53,7 @@
 </form>
 </div>
 <div class="footer-logo">
-<img src="assets\img\logo.png" alt="">
+<img src="<?php echo constant("DIR_APP") ?>default\view\assets\img\logo.png" alt="">
 </div>
 <div class="social-icons-footer">
 <ul>

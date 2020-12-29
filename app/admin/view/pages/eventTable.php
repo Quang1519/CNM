@@ -25,11 +25,11 @@
         <td>'.$result['ngay'].'</td>
         <td>'.$result['diadiem'].'</td>';
 
-        if($result['trangthai'] == 0){
-          echo '<td><span class="badge label-table badge-success">Còn vé</span></td>';
+        if($result['trangthai'] == 1){
+          echo '<td><span class="badge label-table badge-success">Sắp diễn ra</span></td>';
         }
         else {
-          echo '<td><span class="badge label-table badge-danger">Hết vé</span></td>';
+          echo '<td><span class="badge label-table badge-danger">Đã diễn ra</span></td>';
         }
         echo '<td class="text-center">
           <div class="">

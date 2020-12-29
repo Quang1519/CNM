@@ -183,9 +183,81 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 
 
 
+<script src="<?php echo DIR_ROOT?>public/axios.min.js/cdnjs/axios.min.js"></script>
+
+<script>
+
+    async function getData() {
+      try {
+        const response = await axios.get('index.php?app=default&controller=index&action=getEventTime');
+        return response.data;
+        // console.log(response.data);
+        // const response = await axios.get('index.php?app=default&controller=index&action=getEventTime');
+        // console.log(response.data);
+      } catch (error) {
+        console.error(error);
+
+      }
+    }
+
+    (async () => {
+      // console.log(await getData());
+      var data = await getData();
+      var result = '';
+      if(data.length > 10){
+        result = "2000/2/20";
+      }
+      else {
+        result = data;
+      }
+      // Promise.all([data]).then(function(result){
+        // console.log(result[0]);
+        // var ngay = "2021/20/10";
+        // console.log(result[0]);
+        // console.log(ngay);
+        $("#clock").countdown(result, function (event) {
+          var $this = $(this).html(
+            event.strftime(
+              "" +
+                '<div class="time-entry days"><span>%-D</span> <b>:</b> Days</div> ' +
+                '<div class="time-entry hours"><span>%H</span> <b>:</b> Hours</div> ' +
+                '<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutes</div> ' +
+                '<div class="time-entry seconds"><span>%S</span> Seconds</div> '
+            )
+          );
+        });
+
+
+          var vid = document.getElementById("bgvid");
+          var pauseButton = document.querySelector("#polina button");
+          function vidFade() {
+            vid.classList.add("stopfade");
+          }
+          vid.addEventListener("ended", function () {
+            vid.pause();
+            vidFade();
+          });
+          pauseButton.addEventListener("click", function () {
+            vid.classList.toggle("stopfade");
+            if (vid.paused) {
+              vid.play();
+              pauseButton.innerHTML = "<i class='lni-pause'></i>";
+            } else {
+              vid.pause();
+              pauseButton.innerHTML = "<i class='lni-play'></i>";
+            }
+          });
+      // })
+    })()
 
 
 
+    // var test = getData().then(console.log);
+
+    // console.log(test);
+
+    // getData();
+</script>
 
 <?php include 'components/footer.php' ?>
 

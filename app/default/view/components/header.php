@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
 <div class="container">
 
-<a href="index.html" class="navbar-brand"><img src="assets\img\logo.png" alt=""></a>
+<a href="index.html" class="navbar-brand"><img src="<?php echo constant("DIR_APP") ?>default\view\assets\img\logo.png" alt=""></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 <i class="lni-menu"></i>
 </button>
@@ -42,7 +42,7 @@ Nhận vé
   </a>";
 	}
 	?>
-  
+
 
   </li>
 

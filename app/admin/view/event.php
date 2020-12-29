@@ -152,6 +152,7 @@
                                             </div>
                                           </div>
                                       </div>
+
                                       <div class="form-row">
 
                                         <div class="col-md-6">
@@ -183,7 +184,6 @@
                                             </div>
                                           </div>
                                       </div>
-
                                       <div class="form-row">
                                           <div class="col-md-6">
                                               <div class="form-group">
@@ -215,6 +215,32 @@
                                                   </div>
                                               </div>
                                           </div>
+                                      </div>
+
+                                      <div class="form-row" id="add">
+                                        <div class="col-md-12" id="remove">
+                                            <div class="from-group">
+                                                <label for="">Sự kiện diễn ra</label>
+                                                <div class="form-row">
+                                                    <div class="col-md-3">
+
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1" name="customRadio" checked class="custom-control-input" value="1">
+                                                            <label class="custom-control-label" for="customRadio1">Sắp diễn ra</label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-3">
+
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="0">
+                                                                <label class="custom-control-label" for="customRadio2">Đã diễn ra</label>
+                                                            </div>
+
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
                                       </div>
 
                                   </div>
@@ -262,18 +288,33 @@
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\clockpicker\bootstrap-clockpicker.min.js"></script>
 
         <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\js\clockpicker.js"></script>
-
-
-
+        <script src="<?php echo constant("DIR_APP") ?>admin\view\assets\libs\switchery\switchery.min.js"></script>
 
         <script>
+
+            var dienra = $("#update-modal .modal-body #remove");
 
             $(".btn-icon").on("click", function () {
                 // console.log(this);
                 var myValue = $(this).data('val');
                 // $(".modal-body #bookId").val( myBookId );
+
                 var obj = $("#update-modal");
+
                 var time = myValue.thoigian.split("-");
+
+
+                $(obj).find(".modal-body #add").append(dienra);
+
+                if(myValue.trangthai == 0){
+                    $(obj).find(".modal-body #add #customRadio2").attr("checked", true);
+                    $(obj).find(".modal-body #add #customRadio1").attr("checked", false);
+                }
+                else{
+                    $(obj).find(".modal-body #add #customRadio2").attr("checked", false);
+                    $(obj).find(".modal-body #add #customRadio1").attr("checked", true);
+                }
+                // console.log(dienra);
                 // console.log(test[0]);
                 // var hi = test[0];
                 // var start = hi.trim().slice(-2,2);
@@ -297,17 +338,20 @@
                 // var myValue = $(this).data('val');
                 // $(".modal-body #bookId").val( myBookId );
                 var obj = $("#update-modal");
+                $(obj).find(".modal-body #remove").remove();
+
+
                 $(obj).find(".modal-header .modal-title").text("Thêm sự kiện mới");
                 $(obj).find(".modal-footer #create").text("Thêm mới");
                 $(obj).find(".modal-footer #create").prop('value', 'New');
                 // $(".hidden").attr("placeholder", "Type here to search");
-                $(obj).find(".modal-body #masukien").attr("placeholder", "IUHXXXX");
-                $(obj).find(".modal-body #ngay").attr("placeholder", "12/12/2020");
-                $(obj).find(".modal-body #timeStart").attr("placeholder", "6:00");
-                $(obj).find(".modal-body #timeEnd").attr("placeholder", "18:00");
-                $(obj).find(".modal-body #chongoi").attr("placeholder", "3000");
-                $(obj).find(".modal-body #khachmoi").attr("placeholder", "20");
-                $(obj).find(".modal-body #diachi").attr("placeholder", "Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh");
+                $(obj).find(".modal-body #masukien").val('').attr("placeholder", "IUHXXXX").attr("readonly", false);
+                $(obj).find(".modal-body #ngay").val('').attr("placeholder", "12/12/2020");
+                $(obj).find(".modal-body #timeStart").val('').attr("placeholder", "6:00");
+                $(obj).find(".modal-body #timeEnd").val('').attr("placeholder", "18:00");
+                $(obj).find(".modal-body #chongoi").val('').attr("placeholder", "3000");
+                $(obj).find(".modal-body #khachmoi").val('').attr("placeholder", "20");
+                $(obj).find(".modal-body #diachi").val('').attr("placeholder", "Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh");
             });
 
         </script>

@@ -12,6 +12,7 @@
         $data['trangthai'] = 0;
         $data['masukien'] = $_REQUEST['masukien'];
         $data['ngay'] =  str_replace("/", "-", $_REQUEST['ngay']);
+        $data['trangthai'] = $_REQUEST['customRadio'];
 
         if($_REQUEST['create'] == "New") {
           $this->view->message = $this->model->createEvent($data);
