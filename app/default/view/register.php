@@ -28,7 +28,8 @@
 <div class="row">
 <?php $this->page->dangky();  ?>
 <!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
-<?php if(isset($this->message)) {echo $this->message;} ?>
+<?php if (isset($this->message)) echo $this->message;
+	 ?>
 </div>
 </div>
 </div>
@@ -55,7 +56,9 @@
 			echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Bạn chưa đăng nhập', 'Bạn phải đăng nhập để thực hiện đăng ký vé', 'Xác nhận', function(){
 				window.location='login.html';
 			} ); </script>";
-		}
+		};
+		
+		
     ?>
 
 </body>
