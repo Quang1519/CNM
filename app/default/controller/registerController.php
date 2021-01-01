@@ -2,6 +2,7 @@
   class registerController extends Controller {
     public function index() {
       $resultkt=0;
+      
       if(isset($_SESSION['mssv'])){
 
         $password = $this->model->thongtin($_SESSION['mssv']);
@@ -20,17 +21,11 @@
         $hoten = $_SESSION['hoten'];
         $mssv = $_SESSION['mssv'];
         $result = $this->model->register($ten,$hoten,$mssv);
-        foreach ($result as $value) {
-            if($value){
-          $this->view->message = '<div class="alert alert-success mt-3" role="alert">
-          Đăng ký thành công
-        </div>';
-        }
-        else {
-          $this->view->message =  '<div class="alert alert-danger mt-3" role="alert">
-          Đăng ký thất bại
-        </div>';
-        }
+        if ($result == 1) {
+          # code...
+          $this->view->message= "<script type=\"text/javascript\"> Notiflix.Report.Success( 'Bạn đăng ký thành công', 'Bạn đăng ký thành công hãy đợi quản trị viên duyệt đơn. Cảm ơn', 'Xác nhận',function(){window.location='index.html';});</script>";
+        }else{
+          $this->view->message="<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Bạn đăng ký thất bại', 'Bạn đăng ký vé không thành công. Cảm ơn', 'Xác nhận', function(){window.location='index.html';});</script>";
         }
 
       }
