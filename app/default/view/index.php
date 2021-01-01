@@ -58,8 +58,8 @@
 <div class="row">
 <div class="col-12">
 <div class="section-title-header text-center">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why You Should Join?</h2>
-<p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+<h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Tai sao bạn nên tham gia?</h2>
+<p class="wow fadeInDown" data-wow-delay="0.2s">Đây là sự kiện được tổ chức hằng năm <br> Nhàm tạo sân chơi lành mạnh bổ ích cho sinh viên trong những ngày đàu năm học.</p>
 </div>
 </div>
 </div>
@@ -67,9 +67,9 @@
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text mb-70">
 <i class="lni-microphone"></i>
-<h3>Great Speakers</h3>
+<h3>Khách mời tuyệt vời</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Sự góp mặt của nhũng nghệ sĩ nổi tiếng và những sinh viên tài năng của trường.
 </p>
 <span class="count-number">01</span>
 </div>
@@ -77,9 +77,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text">
 <i class="lni-users"></i>
-<h3 class="ts-title">New People</h3>
+<h3 class="ts-title">Nhũng người bạn mới</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Bạn sẽ có dịp gặp gỡ, làm quen với những người bạn mới mở rộng kết nói xã hội.
 </p>
 <span class="count-number">02</span>
 </div>
@@ -88,9 +88,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text mb-70">
 <i class="lni-bullhorn"></i>
-<h3>Global Event</h3>
+<h3>Sự kiện toàn trường</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Sự kiện được đầu tư hoành tráng nhất trong năm được tổ chức để chào đón các bạn tân sinh viên.
 </p>
 <span class="count-number">03</span>
 </div>
@@ -98,9 +98,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text mb-70">
 <i class="lni-heart"></i>
-<h3>Get Inspired</h3>
+<h3>Những điều bất ngờ</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Những điều bất ngờ đang chờ đón các bạn, sẽ có những phần quà đặc biệt được trao.
 </p>
 <span class="count-number">04</span>
 </div>
@@ -108,9 +108,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text mb-70">
 <i class="lni-cup"></i>
-<h3>Networking Session</h3>
+<h3>Điểm rèn luyện</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Không chỉ là quà mà khi tham gia bạn sẽ còn nhận được số điểm rèn luyện nhiều không tưởng.
 </p>
 <span class="count-number">05</span>
 </div>
@@ -118,9 +118,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, except
 <div class="col-lg-4 col-md-6 col-xs-12">
 <div class="single-intro-text mb-70">
 <i class="lni-gallery"></i>
-<h3>Meet New Faces</h3>
+<h3>Hình ảnh chất lượng</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus mollitia, excepturi.
+Sẽ có rất nhiều góc được trang trí để các bạn tha hồ check-in dành cho các tín đồ sống ảo.
 </p>
 <span class="count-number">06</span>
 </div>

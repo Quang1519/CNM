@@ -22,7 +22,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-01.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\noo-phuoc-thinh.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -35,7 +35,7 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">NOO PHƯỚC THỊNH</a></h3>
+<h3><a href="#">Noo Phước Thịnh</a></h3>
 <p>Ca sĩ</p>
 </div>
 </div>
@@ -45,7 +45,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-02.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\chi-dan.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -58,7 +58,7 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">CHI DÂN</a></h3>
+<h3><a href="#">Chi Dân</a></h3>
 <p>Ca sĩ</p>
 </div>
 </div>
@@ -68,7 +68,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-03.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\thuy-tien.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -81,8 +81,8 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Paul Kowalsy</a></h3>
-<p>Lead Designer, TNW</p>
+<h3><a href="#">Thủy Tiên</a></h3>
+<p>Ca sĩ</p>
 </div>
 </div>
 
@@ -91,7 +91,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-04.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\vicky-nhung.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -104,8 +104,8 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Jhon Doe</a></h3>
-<p>Back-end Developer, ASUS</p>
+<h3><a href="#">Vicky Nhung</a></h3>
+<p>Ca sĩ</p>
 </div>
 </div>
 
@@ -114,7 +114,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-05.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\mlee.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -127,8 +127,8 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Daryl Dixon</a></h3>
-<p>Full-stack Developer, Google</p>
+<h3><a href="#">Mlee</a></h3>
+<p>Ca sĩ</p>
 </div>
 </div>
 
@@ -137,7 +137,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-06.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\hanh-trang.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -150,8 +150,8 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Chris Adams</a></h3>
-<p>UI Designer, Apple</p>
+<h3><a href="#">Hạnh Trang</a></h3>
+<p>Ca sĩ, cựu sinh viên IUH</p>
 </div>
 </div>
 
@@ -160,7 +160,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.4s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-07.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\gin-tuan-kiet.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -173,8 +173,8 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Paul Kowalsy</a></h3>
-<p>Lead Designer, TNW</p>
+<h3><a href="#">Gin Tuấn Kiệt</a></h3>
+<p>Ca sĩ</p>
 </div>
 </div>
 
@@ -183,7 +183,7 @@
 
 <div class="team-item wow fadeInUp" data-wow-delay="1.6s">
 <div class="team-img">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\team-08.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\team\san-v.jpg" alt="">
 <div class="team-overlay">
 <div class="overlay-social-icon text-center">
 <ul class="social-icons">
@@ -196,14 +196,14 @@
 </div>
 </div>
 <div class="info-text">
-<h3><a href="#">Jhon Doe</a></h3>
-<p>Back-end Developer, ASUS</p>
+<h3><a href="#">SanV</a></h3>
+<p>Ca sĩ, cựu sinh viên IUH</p>
 </div>
 </div>
 
 </div>
 </div>
-<a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Meet all speakers</a>
+<a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Cùng các cộng tác viên</a>
 </div>
 </section>
 
@@ -222,10 +222,10 @@
 <div class="col-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-1.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-1.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-1.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-1.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -234,10 +234,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-2.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-2.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-2.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-2.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -246,10 +246,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-3.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-3.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-3.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-3.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -258,10 +258,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-4.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-4.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-4.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-4.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -270,10 +270,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-5.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-5.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-5.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-5.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -282,10 +282,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-6.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-6.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-6.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-6.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -294,10 +294,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-7.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-7.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-7.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-7.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>
@@ -306,10 +306,10 @@
 <div class="ccol-md-6 col-sm-6 col-lg-3">
 <div class="gallery-box">
 <div class="img-thumb">
-<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-8.jpg" alt="">
+<img class="img-fluid" src="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-8.jpg" alt="">
 </div>
 <div class="overlay-box text-center">
-<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\img-8.jpg">
+<a class="lightbox" href="<?php echo DIR_APP ?>default\view\assets\img\gallery\event-8.jpg">
 <i class="lni-plus"></i>
 </a>
 </div>

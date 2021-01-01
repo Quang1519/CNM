@@ -16,7 +16,7 @@ Trang chủ
 </li>
 <li class="nav-item <?php echo $this->active=='schedules' ? 'active':'' ?>" >
 <a class="nav-link" href="schedules.html">
-Lịch sự kiện
+Thông tin
 </a>
 </li>
 <li class="nav-item <?php echo $this->active=='speakers' ? 'active':'' ?>">
