@@ -1,6 +1,5 @@
 <?php
 
-
 class registerView
 {
  	function dangky(){
@@ -35,6 +34,7 @@ class registerView
 			</div>
 			<div class="form-submit">
 			<button type="submit" class="btn btn-common" id="nutdk" name="register"><i class="fa fa-paper-plane" aria-hidden="true"></i> Đăng ký</button>';
+			break;
 		}
 		 // $dulieu = $this->data['kiemtra'];
  		// foreach ($dulieu as $key => $value) {

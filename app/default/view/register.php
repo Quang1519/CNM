@@ -28,8 +28,7 @@
 <div class="row">
 <?php $this->page->dangky();  ?>
 <!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
-<?php if (isset($this->message)) echo $this->message;
-	 ?>
+
 </div>
 </div>
 </div>
@@ -57,9 +56,10 @@
 				window.location='login.html';
 			} ); </script>";
 		};
-		
-		
+
+
     ?>
+		<?php THONGBAO::message($this->message)?>
 
 </body>
 </html>

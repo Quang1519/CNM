@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>EventUp - Event and Conference Template</title>
+<title>Khai giảng IUH</title>
 <!-- <base href="http://localhost:8080/CNM"> -->
 <link rel="stylesheet" type="text/css" href="<?php echo constant("DIR_APP") ?>default\view\assets\css\bootstrap.min.css">
 
