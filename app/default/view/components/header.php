@@ -61,7 +61,7 @@ Nhận vé
 <div class="icon">
 <i class="lni-mic"></i>
 </div>
-<p class="banner-info">23, 10 2020 - 371 Nguyễn Kiệm, P.3, Gò Vấp, HCM</p>
+<!-- <p class="banner-info">23, 10 2020 - 371 Nguyễn Kiệm, P.3, Gò Vấp, HCM</p> -->
 <h2 class="head-title">LỄ KHAI GIẢNG</h2>
 <p class="banner-desc">
 Ngày hội sinh viên tại trường vào buổi sáng có cộng điểm rèn luyện và lễ khai giảng được diễn ra vào buổi chiều.</p>
