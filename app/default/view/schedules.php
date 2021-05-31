@@ -69,69 +69,7 @@
 <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
 <div id="accordion">
 	<?php $this->page->thongtinsinhvien(); ?>
-	<div class="card">
-	<div id="headingTwo">
-	<div class="schedule-slot-time">
-	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
-	<!-- <h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6> -->
-	Thay đổi mật khẩu
-	</div>
-	<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		<div class="images-box">
-		<!-- <img class="img-fluid" src="assets\img\speaker\speakers-2.jpg" alt=""> -->
-		</div>
-	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
-		<h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6>
-	</div>
-	</div>
-	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-	<div class="card-body">
-
-	<!-- <h4 class="h4 section-title wow fadeInUp" data-wow-delay="0.2s">Thông tin sinh viên</h4> -->
-	<div class="col-md-12">
-	<!-- <div class="form-wrapper"> -->
-  <!-- <form role="form" method="post" id="loginForm" name="login-form" data-toggle="validator"> -->
-			<div class="card-box">
-					<!-- <h4 class="header-title mb-3">Horizontal form</h4> -->
-
-					<form class="form-horizontal" name="changePass" role="form" method="post" data-toggle="validator">
-							<div class="form-group row">
-									<label for="inputEmail3" class="col-sm-3 col-form-label">Mật khẩu hiện tại</label>
-									<div class="col-sm-9">
-											<input type="password" class="form-control" id="inputEmail3" name="oldPass" placeholder="Nhập khẩu hiện tại" required data-error="Vui lòng điền mật khẩu hiện tại">
-                			<div class="help-block with-errors"></div>
-                	</div>
-							</div>
-							<div class="form-group row">
-									<label for="inputPassword3" class="col-sm-3 col-form-label">Mật khẩu mới</label>
-									<div class="col-sm-9">
-											<input type="password" class="form-control" id="inputPassword3" name="newPass"  placeholder="Nhập khẩu mới" required data-error="Vui lòng điền mật khẩu mới">
-											<div class="help-block with-errors"></div>
-									</div>
-							</div>
-							<div class="form-group row">
-									<label for="inputPassword5" class="col-sm-3 col-form-label">Nhập lại mật khẩu mới</label>
-									<div class="col-sm-9">
-											<input type="password" class="form-control" id="inputPassword5" name="reNewPass"  placeholder="Nhập lại mật khẩu mới" required data-error="Vui lòng điền lại mật khẩu mới">
-											<div class="help-block with-errors"></div>
-									</div>
-							</div>
-
-							<div class="form-group mb-0 justify-content-end row">
-									<div class="col-sm-9">
-											<button type="submit" name="changePass" class="btn btn-common">Xác nhận</button>
-									</div>
-							</div>
-					</form>
-			</div>
-	</div>
-
-	<!-- <div class="location">
-	<span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-	</div> -->
-	</div>
-	</div>
-	</div>
+	
 
 </div>
 </div>
