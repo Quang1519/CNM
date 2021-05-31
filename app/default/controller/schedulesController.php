@@ -36,10 +36,11 @@
 			}
 
 			if(isset($_REQUEST['requestChangeTicket'])) {
-				$mssvChuyen = $_SESSION['mssv'];
+				$mssvYecau = $_SESSION['mssv'];
 				$mssvNhan = $_REQUEST['mssvNhan'];
 
-				$result = $this->model->chuyenve($mssvChuyen, $mssvNhan);
+				$result = $this->model->chuyenve($mssvYecau, $mssvNhan);
+
 				if($result) {
 					$this->view->message=[1, "Yêu cầu chuyển vé"];
 				} else {

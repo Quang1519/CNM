@@ -108,17 +108,33 @@ class defaultModel extends Model {
     
   }
 
-
-  public function chuyenVe($mssvChuyen, $mssvNhan) {
-    $url = $this->link."chuyenve"."/".$mssvChuyen."/".$mssvNhan;
+  public function checkChuyenVe($mssvYecau, $mssvNhan) {
+    // if($this->sohuuve($mssvYecau))
+    $url = $this->link."checkchuyenve"."/".$mssvYecau."/".$mssvNhan;
     $result = $this->loaddulieu($url);
-    // if($re)
-    // var_dump($result['success']);
     if($result['success']) {
       return true;
     } else {
       return false;
     }
+  }
+
+
+  public function chuyenVe($mssvYecau, $mssvNhan) {
+    if($this->checkChuyenVe($mssvYecau, $mssvNhan)) {
+      $url = $this->link."chuyenve"."/".$mssvYecau."/".$mssvNhan;
+      $result = $this->loaddulieu($url);
+      // if($re)
+      // var_dump($result['success']);
+      if($result['success']) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+    
   }
 
 
