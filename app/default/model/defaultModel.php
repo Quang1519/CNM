@@ -92,6 +92,35 @@ class defaultModel extends Model {
     }
   }
 
+  public function sohuuve($mssv) {
+    $url = $this->link."sohuuve/".$mssv;
+    $result = $this->loaddulieu($url);
+    // var_dump($result[0]['mave']);
+    if(!empty($result)) {
+      if($result[0]['mave']) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+    
+  }
+
+
+  public function chuyenVe($mssvChuyen, $mssvNhan) {
+    $url = $this->link."chuyenve"."/".$mssvChuyen."/".$mssvNhan;
+    $result = $this->loaddulieu($url);
+    // if($re)
+    // var_dump($result['success']);
+    if($result['success']) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 
   public function changePass($mssv, $password){
     $url = $this->link."/taikhoan/updatepass/".$mssv."/".$password;

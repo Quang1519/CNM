@@ -63,6 +63,7 @@ class schedulesView
     }
     function thongtinsinhvien(){
     	$ketqua = $this->data['thongtin'];
+    	$sohuu = $this->data['sohuuve'] ? "Có vé" : "Không"; 
     	if($ketqua!=0){
     		foreach($ketqua as  $val){
     		$gioitinh = ($val['gioitinh']==1) ? 'Nam':'Nữ';
@@ -92,6 +93,7 @@ class schedulesView
 					<th>Chuyên Ngành</th>
 					<th>Ngày Sinh</th>
 					<th>Tình trạng</th>
+					<th>Sở hữu vé</th>
 				</tr>
 				<tr>
 					<td>'.$val['khoa'].'</td>
@@ -100,6 +102,7 @@ class schedulesView
 					<td>'.$val['nganh'].'</td>
 					<td>'.$val['ngaysinh'].'</td>
 					<td class="text-danger">'.$trangthai.'</td>
+					<td class="text-danger">'.$sohuu.'</td>
 				</tr>
 				</table>
 				</div>
@@ -109,6 +112,10 @@ class schedulesView
 		';
 
 		$this->changePass();
+
+		if($this->data['sohuuve']) {
+			$this->chuyenve();
+		}
     	}
     }else
     	{
@@ -173,6 +180,50 @@ class schedulesView
 							<div class="form-group mb-0 justify-content-end row">
 									<div class="col-sm-9">
 											<button type="submit" name="changePass" class="btn btn-common">Xác nhận</button>
+									</div>
+							</div>
+					</form>
+			</div>
+	</div>
+
+	</div>
+	</div>
+	</div>';
+    }
+
+
+    public function chuyenVe()
+    {
+    	echo '<div class="card">
+	<div id="headingThree">
+	<div class="schedule-slot-time">
+	 Yêu cầu chuyển vé
+	</div>
+	<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		<div class="images-box">
+		</div>
+		<h6 class="h6">Bạn có thể chuyển vé của mình cho sinh viên khác có trong hệ thống</h6>
+	</div>
+	</div>
+	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+	<div class="card-body">
+
+	<div class="col-md-12">
+			<div class="card-box">
+
+					<form class="form-horizontal" name="requestChangeTicket" role="form" method="post" data-toggle="validator">
+							<div class="form-group row">
+									<label for="inputEmail3" class="col-sm-3 col-form-label">Nhập mã số sinh viên nhận vé</label>
+									<div class="col-sm-9">
+											<input type="text" class="form-control" id="inputEmail3" name="mssvNhan" placeholder="Nhập mã số sinh viên nhận vé" required data-error="Vui lòng điền mã số sinh viên nhận vé">
+                			<div class="help-block with-errors"></div>
+                	</div>
+							</div>
+						
+
+							<div class="form-group mb-0 justify-content-end row">
+									<div class="col-sm-9">
+											<button type="submit" name="requestChangeTicket" class="btn btn-common">Xác nhận</button>
 									</div>
 							</div>
 					</form>

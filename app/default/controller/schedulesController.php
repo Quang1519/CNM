@@ -3,10 +3,11 @@
 
     public function index(){
 			$sukien = $this->model->sukien();
-			$this->view->message = -1;
+			$this->view->message = [-1];
 
     	if(isset($_SESSION['mssv'])){
 				$thongtin = $this->model->thongtin($_SESSION['mssv']);
+				$sohuuve = $this->model->sohuuve($_SESSION['mssv']);
 				$this->password = $thongtin[0]['password'];
     	}else{
     		$thongtin = 0;
@@ -21,20 +22,33 @@
 
 					if($result == 1){
 						session_destroy();
-						$this->view->message= 1;
+						$this->view->message = [1, "Đổi mật khẩu"];
 						// echo '<script type="text/javascript">window.location="logout.html"</script>';
 					}
 					else {
-						$this->view->message = 0;
+						$this->view->message = [0, "Đổi mật khẩu"];
 					}
 				}
 				else {
-					$this->view->message = 0;
+					$this->view->message = [0, "Đổi mật khẩu"];
 				}
 
 			}
 
-    	$this->view->data=['sukien'=>$sukien,'thongtin'=>$thongtin];
+			if(isset($_REQUEST['requestChangeTicket'])) {
+				$mssvChuyen = $_SESSION['mssv'];
+				$mssvNhan = $_REQUEST['mssvNhan'];
+
+				$result = $this->model->chuyenve($mssvChuyen, $mssvNhan);
+				if($result) {
+					$this->view->message=[1, "Yêu cầu chuyển vé"];
+				} else {
+					$this->view->message=[0, "Yêu cầu chuyển vé"];
+				}
+			}
+
+
+    	$this->view->data=['sukien'=>$sukien,'thongtin'=>$thongtin, 'sohuuve' => $sohuuve];
     	$this->view->render('schedules','schedulesView');
     }
   }

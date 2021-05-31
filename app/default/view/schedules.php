@@ -91,19 +91,19 @@
 <?php include 'components/footer.php' ?>
 <?php
 
-	switch ($this->message){
-		case 0:
-			echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
-				;
-			} ); </script>";
-		break;
-		case 1:
-			echo "<script type=\"text/javascript\"> Notiflix.Report.Success( 'Đổi mật thành công', 'Vui lòng đăng nhập lại', 'Xác nhận', function(){
-				window.location ='login.html';
-			} ); </script>";
-		break;
-	}
-
+	// switch ($this->message){
+	// 	case 0:
+	// 		echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
+	// 			;
+	// 		} ); </script>";
+	// 	break;
+	// 	case 1:
+	// 		echo "<script type=\"text/javascript\"> Notiflix.Report.Success( 'Đổi mật thành công', 'Vui lòng đăng nhập lại', 'Xác nhận', function(){
+	// 			window.location ='login.html';
+	// 		} ); </script>";
+	// 	break;
+	// }
+	THONGBAO::message($this->message);
 		// if(isset($this->message)){
 		// 	echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
 		// 		;
