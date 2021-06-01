@@ -24,11 +24,11 @@ Thông tin
 Khách mời
 </a>
 </li>
-<li class="nav-item <?php echo $this->active=='register' ? 'active':'' ?>">
+<!-- <li class="nav-item <?php echo $this->active=='register' ? 'active':'' ?>">
 <a class="nav-link" href="register.html">
 Nhận vé
 </a>
-</li>
+</li> -->
 <li class='nav-item <?php echo $this->active=='login' ? 'active':'' ?>'>
 	<?php
 	if (isset($_SESSION['mssv'])&&isset($_SESSION['phanquyen'])&&isset($_SESSION['ten'])) {
