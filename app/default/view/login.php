@@ -15,7 +15,7 @@
       <div class="col-12">
         <div class="section-title-header text-center">
           <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Đăng nhập</h2>
-          <p class="wow fadeInDown" data-wow-delay="0.2s">Chỉ dành cho những người được cấp tài khoản đăng nhập <br> Chức năng không dành cho tất cả sinh viên.</p>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">Chỉ dành cho những sinh viên có trong danh sách tham dự sự kiện.<br> Chức năng không dành cho tất cả sinh viên.</p>
         </div>
       </div>
     </div>

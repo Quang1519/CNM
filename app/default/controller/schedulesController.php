@@ -5,13 +5,13 @@
 			$sukien = $this->model->sukien();
 			$this->view->message = [-1];
 
+			$thongtin = 0;
+			$sohuuve = 0;
     	if(isset($_SESSION['mssv'])){
 				$thongtin = $this->model->thongtin($_SESSION['mssv']);
 				$sohuuve = $this->model->sohuuve($_SESSION['mssv']);
 				$this->password = $thongtin[0]['password'];
-    	}else{
-    		$thongtin = 0;
-			}
+    	}
 
 			if(isset($_REQUEST['changePass'])) {
         $oldPass = $_REQUEST['oldPass'];

@@ -63,6 +63,7 @@ class schedulesView
     }
     function thongtinsinhvien(){
     	$ketqua = $this->data['thongtin'];
+
     	$sohuu = $this->data['sohuuve'] ? "Có vé" : "Không"; 
     	if($ketqua!=0){
     		foreach($ketqua as  $val){
@@ -133,7 +134,7 @@ class schedulesView
 	<div id="headingTwo">
 	<div class="schedule-slot-time">
 	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
-	<!-- <h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6> -->
+	<!-- <h6 class="h6">Hãy đổi mật khẩu để bảo mật tài khoản</h6> -->
 	Thay đổi mật khẩu
 	</div>
 	<div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -141,7 +142,7 @@ class schedulesView
 		<!-- <img class="img-fluid" src="assets\img\speaker\speakers-2.jpg" alt=""> -->
 		</div>
 	<!-- <h5 class="name text-danger">Đổi mật khẩu</h5> -->
-		<h6 class="h6">Bạn không thể đăng ký vé nếu chưa đổi mật khẩu</h6>
+		<h6 class="h6">Hãy đổi mật khẩu để bảo mật tài khoản của bạn</h6>
 	</div>
 	</div>
 	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -223,7 +224,7 @@ class schedulesView
 
 							<div class="form-group mb-0 justify-content-end row">
 									<div class="col-sm-9">
-											<button type="submit" name="requestChangeTicket" class="btn btn-common">Xác nhận</button>
+											<button type="submit" name="requestChangeTicket" class="btn btn-common">Xác nhận chuyển vé</button>
 									</div>
 							</div>
 					</form>

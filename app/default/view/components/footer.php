@@ -44,13 +44,13 @@
 <div class="row justify-content-center">
 <div class="col-lg-8 col-md-12 col-xs-12">
 <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s">
-<h2 class="subscribe-title">Nhận Thông Tin</h2>
-<form class="text-center form-inline">
+<!-- <h2 class="subscribe-title">Nhận Thông Tin</h2> -->
+<!-- <form class="text-center form-inline">
 <input class="mb-20 form-control" name="email" placeholder="Nhập email của bạn tại đây">
 <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit">
 <span class="ladda-label"><i class="lni-check-box"></i> Đăng ký</span>
 </button>
-</form>
+</form> -->
 </div>
 <div class="footer-logo">
 <img src="<?php echo constant("DIR_APP") ?>default\view\assets\img\logo.png" alt="">
