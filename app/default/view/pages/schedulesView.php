@@ -122,7 +122,7 @@ class schedulesView
     	{
 
     		echo "<script type=\"text/javascript\">
-    		Notiflix.Confirm.Show('Thông báo','Bạn có muốn đăng nhập?','Yes','No',function(){window.location='login.html';});
+    		Notiflix.Confirm.Show('Thông báo','Bạn có muốn đăng nhập?','Đăng nhập','Hủy',function(){window.location='login.html';});
     </script>";
     	}
     }

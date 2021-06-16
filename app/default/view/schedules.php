@@ -94,6 +94,7 @@
 	// echo "sdfafadsfadsfs";
 	// print_r($this->message);
 	// die($this->message);
+if($this->message[1] != 'Yêu cầu chuyển vé') {
 	switch ($this->message[0]){
 		case 0:
 			echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
@@ -106,6 +107,10 @@
 			} ); </script>";
 		break;
 	}
+} else {
+	THONGBAO::message($this->message);
+}
+	
 	// THONGBAO::message($this->message);
 		// if(isset($this->message)){
 		// 	echo "<script type=\"text/javascript\"> Notiflix.Report.Failure( 'Đổi mật khẩu thất bại', '', 'Xác nhận', function(){
